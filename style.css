@@ -1,0 +1,48 @@
+
+*{
+  font-family: sans-serif,helvetica,roboto;
+  font-size: 20px;
+  border-radius: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+a,a:hover,a:visited{
+  color: currentColor;
+  text-decoration: none;
+  display: block;
+}
+.container{
+  height: 100vh;
+  background: linear-gradient(45deg,white,blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.email{
+  border: 0;
+  padding: 10px;
+  min-width: 275px;
+  background: rgba(255, 255,255, 0.2);
+  color: rgba(255, 255, 255, 1);
+}
+.email::placeholder{
+  color: rgba(255,255,255,0.35)
+}
+.update{
+  padding: 10px;
+  width: 20%;
+  min-width: 275px;
+  background: rgba(255, 255,255, 0.2);
+  color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
+  transition: all .2s ease-out;
+}
+.failure{
+  background: rgba(255, 0, 0, 0.5);
+}
+.success{
+  background: rgba(0, 255, 0, 0.5);
+}
